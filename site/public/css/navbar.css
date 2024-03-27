@@ -1,0 +1,67 @@
+:root {
+    /*Standard Colors*/
+    --ihccRed: rgb(120,47,64);
+    --ihccYellow: rgb(255,164,0);
+    --ihccWhite: rgb(255,255,255);
+    --ihccBlack: rgb(0,0,0);
+
+    /*Event Colors*/
+    --ihccRed-dark: rgb(105, 37, 64);
+    --ihccYellow-dark: rgb(204, 118, 6);
+}
+
+* {
+    font-size: 62.5%;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+/* || Site-wide */
+.navbar-container {
+    display: flex;
+    margin-top: calc(1.5vw - 2px);
+    width: 97vw;
+
+    font-weight: 400;
+
+    padding: 5px;
+    border-radius: 10rem;
+
+    color: var(--ihccWhite);
+    background-color: var(--ihccBlack);
+}
+#navbar-logo-img {
+    height: auto;
+    width: 65px;
+}
+.navbar-container-left {
+    /*put things in here as needed*/
+    display: flex;
+    align-items: center;
+}
+.navbar-container-left span {
+    margin-left: 1rem;
+    font-size: 20em;
+}
+
+.navbar-container-right {
+    margin-left: auto;
+}
+#navbar-menu {
+    display: block;
+    width: 63px;
+    height: 63px;
+
+    /*making border radius 50% always results in a perfect circle, just fyi for anyone who cares*/
+    border-radius: 50%;
+    border: 2px solid var(--ihccRed);
+
+    background-color: var(--ihccWhite);
+}
