@@ -12,21 +12,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}" type="text/css">
-    <title>Document</title>
+    <title>
+        @yield('title')
+    </title>
 </head>
 <body>
-    <section>
-        <div class="navbar-container">
-            <div class="navbar-container-left">
-                <div class="navbar-logo">
-                    <img id="navbar-logo-img" src="{{ asset('images/IHCC-CSDC.png') }}" alt="IHCC CSDC LOGO">
-                </div>
-                <span>IHCC CSDC</span>
-            </div>
-            <div class="navbar-container-right">
-                <button id="navbar-menu"></button>
-            </div>
-        </div>
-    </section>
+    @yield('content')
 </body>
 </html>

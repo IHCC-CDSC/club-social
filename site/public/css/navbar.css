@@ -8,6 +8,15 @@
     /*Event Colors*/
     --ihccRed-dark: rgb(105, 37, 64);
     --ihccYellow-dark: rgb(204, 118, 6);
+
+    /*box shadow code, standard use, light source from left*/
+    --custom-box-shadow:
+        0 1px 1px rgba(0,0,0,0.11),
+        0 2px 2px rgba(0,0,0,0.11),
+        0 4px 4px rgba(0,0,0,0.11),
+        0 6px 8px rgba(0,0,0,0.11),
+        0 8px 16px rgba(0,0,0,0.11);
+
 }
 
 * {
@@ -18,18 +27,32 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
     margin: 0;
+    height: 150vh;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 /* || Site-wide */
+#nav-area {
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+
+    width: 100vw;
+}
+
 .navbar-container {
     display: flex;
+    align-items: center;
     margin-top: calc(1.5vw - 2px);
     width: 97vw;
 
-    font-weight: 400;
+    font-weight: 500;
 
     padding: 5px;
     border-radius: 10rem;
@@ -40,6 +63,9 @@ body {
 #navbar-logo-img {
     height: auto;
     width: 65px;
+
+    /*making border radius 50% always results in a perfect circle, just fyi for anyone who cares*/
+    border-radius: 50%;
 }
 .navbar-container-left {
     /*put things in here as needed*/
@@ -48,20 +74,104 @@ body {
 }
 .navbar-container-left span {
     margin-left: 1rem;
-    font-size: 20em;
+    font-size: 15em;
 }
 
 .navbar-container-right {
     margin-left: auto;
 }
-#navbar-menu {
+#navbar-menu-btn {
+    transition: all .2s ease;
+
     display: block;
     width: 63px;
     height: 63px;
 
-    /*making border radius 50% always results in a perfect circle, just fyi for anyone who cares*/
     border-radius: 50%;
-    border: 2px solid var(--ihccRed);
+    border: 3px solid var(--ihccRed);
 
     background-color: var(--ihccWhite);
+}
+#close-sub-nav-menu {
+    float: right;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    border: none;
+
+    background-color: var(--ihccWhite);
+}
+#sub-nav-menu {
+    transition: all .2s ease;
+    display: none;
+    z-index: 15;
+    position: fixed;
+    right: 0;
+    margin-top: calc(1.5vw + 5px);
+    margin-right: 1.5%;
+
+    min-width: 225px;
+    max-width: 450px;
+    <!--min-height: 325px;
+    max-height: 525px;-->
+
+    opacity: 0;
+    border-radius: 30px;
+    border: 3px solid var(--ihccYellow);
+    background-color: var(--ihccWhite);
+    box-shadow: var(--custom-box-shadow);
+}
+#sub-nav-menu ol {
+    margin-right: 15px;
+
+    font-weight: 600;
+    font-size: 25em;
+    text-align: right;
+    list-style-type: none;
+}
+#sub-nav-menu a {
+    color: var(--ihccRed);
+    text-decoration: none;
+}
+
+/*styling for announcement tab*/
+.announcement-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    padding-top: 12vh;
+}
+.announcement-container {
+    width: 97vw;
+
+    padding: 10px;
+    border-radius: 30px;
+    height: 20vh;
+
+    color: var(--ihccWhite);
+    background-color: var(--ihccBlack);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar-container {
+        margin-top: 0;
+        width: 100vw;
+
+        padding: 5px;
+        border-radius: 0;
+    }
+    .navbar-container-right {
+        margin-right: 10px;
+    }
+    .navbar-container-left {
+        margin-left: 10px;
+    }
+    #sub-nav-menu {
+        margin-top: 5px;
+        margin-right: calc(1.5% + 10px);
+    }
 }
