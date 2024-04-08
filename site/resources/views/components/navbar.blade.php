@@ -31,6 +31,7 @@
     let delayInMilliseconds = 20; // 1 second delay
     let subNavBar = document.getElementById('sub-nav-menu');
     let navArea = document.getElementById('nav-area');
+    let navContainer = document.getElementsByClassName('navbar-container');
 
     function subNavExtend() {
         subNavBar.style.display = "block";
@@ -51,9 +52,10 @@
     // Function to change the element's style when not at the top
     function handleScroll() {
         if (window.scrollY > 30) {
-            navArea.style.backgroundColor = 'lightgreen';
+            navArea.style.background = 'rgba(210, 210, 210, .5)';
+            navArea.style.backgroundFilter = 'blur(10px)';
         } else {
-            navArea.style.backgroundColor = 'lightblue';
+            navArea.style.background = 'rgba(210, 210, 210, .0)';
         }
     }
 
