@@ -35,6 +35,12 @@ Inside of the php.ini, you'll need to remove the semicolon in front of the follo
 
 If you have any quesitons about the php install, email the repo's contact email.
 
+### Setup for Email
+
+We use gmail accounts as both our production email host and testing host. You can link your gmail account to your laravel project in your .env
+by setting up a thing in your google account called an "app password". You can look up how to add this to your env file, but I'll link the article I used below.
+https://mailtrap.io/blog/laravel-send-email-gmail/
+
 ### Pull Requests
 
 Pull requests are encouraged for all contributions. However, please note that they will be reviewed by club leadership before merging. If your pull request is denied or requires edits, our team will provide feedback to ensure it aligns with project goals.
