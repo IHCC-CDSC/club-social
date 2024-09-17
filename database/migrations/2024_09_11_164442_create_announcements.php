@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('uid'); // !! BESURE YOU DEFINE COLUMNS FIRST IF YOU WANT A FK !!
             $table->foreign('uid')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->string('title', length: 120);
             $table->longText('content');
             $table->timestamps();
         });

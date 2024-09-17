@@ -1,60 +1,66 @@
-# Club Social
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-A social media and club management site for the software development club.
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-## Table of Contents
+## About Laravel
 
-- [About](#about)
-- [Contributing](#contributing)
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## About
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-This site will prdominately be written in Laravel (a PHP framework), but future development may branch into node.js frameworks such as VUE, which Laravel is natively
-compatable with. ClubSocial is inteded to help the members of the club communicate with one another and recieve news about club updates and announcements.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+## Learning Laravel
+
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+## Laravel Sponsors
+
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+
+### Premium Partners
+
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
 ## Contributing
 
-We welcome contributions from all club members at any time. Whether you're interested in coding, design, or bug reporting, your involvement is valuable to us.
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-### System Requirements
+## Code of Conduct
 
-To work on this project, you'll need to have php installed on your computer. I reccomend this page to get you started: https://www.php.net/manual/en/install.windows.php
-You will need to make a copy of the php.ini-development file included with your php install, and remove the -development part of the file extension. This "php.ini" serves
-as your php configuration file.
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-_If you are on a windows machine, you will need to edit your system environment variables path to go to your php folder._
+## Security Vulnerabilities
 
-Inside of the php.ini, you'll need to remove the semicolon in front of the following:
-* extension=curl
-* extension=fileinfo
-* extension=openssl
-* extension=zip
-* extension=pdo_mysql
-* extension=pdo_sqlite
-* extension=sqlite3
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-If you have any quesitons about the php install, email the repo's contact email.
+## License
 
-### Setup for Email
-
-We use gmail accounts as both our production email host and testing host. You can link your gmail account to your laravel project in your .env
-by setting up a thing in your google account called an "app password". You can look up how to add this to your env file, but I'll link the article I used below.
-https://mailtrap.io/blog/laravel-send-email-gmail/
-
-### Pull Requests
-
-Pull requests are encouraged for all contributions. However, please note that they will be reviewed by club leadership before merging. If your pull request is denied or requires edits, our team will provide feedback to ensure it aligns with project goals.
-
-### Site Design
-
-For site design contributions, please ensure that your work adheres to the design guidelines provided in the designated directory within the project. We use Adobe XD for site design, but if you prefer other tools, there are free alternatives that are compatible with XD files.
-
-### Bug Reports
-
-Bug reports are highly appreciated! If you encounter any issues while using the project, please report them so we can address them promptly.
-
-### Respectful Collaboration
-
-We value a collaborative and respectful environment within our community. Please treat all contributors with kindness and consideration.
-
-If you have any questions or need assistance, don't hesitate to reach out to club leadership or fellow members.
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
